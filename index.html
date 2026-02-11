@@ -573,7 +573,7 @@
             }
         }
         
-        .dark @keyframes pulse-ring {
+        @keyframes pulse-ring-dark {
             0% {
                 box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
             }
@@ -587,6 +587,10 @@
         
         .whatsapp-btn {
             animation: pulse-ring 2s infinite;
+        }
+        
+        .dark .whatsapp-btn {
+            animation: pulse-ring-dark 2s infinite;
         }
     </style>
 </head>
