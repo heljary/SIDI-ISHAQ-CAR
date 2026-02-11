@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sidi Ishaq Car | Dacia Car Rental Services | كراء سيارات سوق عام </title>
+    <meta name="description" content="Premium Dacia car rental services in Morocco. Rent Logan, Sandero, Duster and more. Professional service, competitive prices. Contact us via WhatsApp for instant booking.">
+    <meta name="keywords" content="car rental, Dacia rental, Morocco car rental, Shooq Am, كراء سيارات">
+    
+    <meta property="og:title" content="Sidi Ishaq Car - Premium Dacia Rentals">
+    <meta property="og:description" content="Professional car rental services specializing in Dacia vehicles. Book now via WhatsApp!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Dacia_Logo.svg/1200px-Dacia_Logo.svg.png">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        accent: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        },
+                        vibrant: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        },
+                        dark: {
+                            bg: '#0a0a0a',
+                            card: '#141414',
+                            border: '#262626',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Bebas Neue', 'sans-serif'],
+                        'body': ['Outfit', 'sans-serif'],
+                        'arabic': ['Cairo', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'slide-down': 'slideDown 0.3s ease-out',
+                        'slide-right': 'slideRight 0.8s ease-out',
+                        'slide-left': 'slideLeft 0.8s ease-out',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'pulse-glow': 'pulseGlow 2s infinite',
+                        'scale-in': 'scaleIn 0.5s ease-out',
+                        'rotate-slow': 'rotateSlow 20s linear infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'shimmer': 'shimmer 3s ease-in-out infinite',
+                        'gradient-shift': 'gradientShift 8s ease infinite',
+                        'blob': 'blob 7s infinite',
+                        'spin-slow': 'spin 3s linear infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(40px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        slideDown: {
+                            '0%': { transform: 'translateY(-100%)' },
+                            '100%': { transform: 'translateY(0)' },
+                        },
+                        slideRight: {
+                            '0%': { transform: 'translateX(-40px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        slideLeft: {
+                            '0%': { transform: 'translateX(40px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { 
+                                boxShadow: '0 0 20px rgba(34, 197, 94, 0.4), 0 0 40px rgba(34, 197, 94, 0.2)' 
+                            },
+                            '50%': { 
+                                boxShadow: '0 0 40px rgba(34, 197, 94, 0.8), 0 0 80px rgba(34, 197, 94, 0.4)' 
+                            },
+                        },
+                        scaleIn: {
+                            '0%': { transform: 'scale(0.95)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' },
+                        },
+                        rotateSlow: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(360deg)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-200% center' },
+                            '100%': { backgroundPosition: '200% center' },
+                        },
+                        gradientShift: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                        },
+                        blob: {
+                            '0%, 100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+                            '50%': { borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%' },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            overflow-x: hidden;
+            transition: background-color 0.3s ease;
+        }
+        
+        body[dir="rtl"] {
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        .dark ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #22c55e;
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #16a34a;
+        }
+        
+        /* Loading Animation */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s, visibility 0.5s;
+        }
+        
+        .dark .loader {
+            background: #0a0a0a;
+        }
+        
+        .loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .loader-spinner {
+            width: 60px;
+            height: 60px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #22c55e;
+            border-right: 5px solid #14b8a6;
+            border-bottom: 5px solid #166534;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Navbar Scroll Effect */
+        .navbar-hidden {
+            transform: translateY(-100%);
+        }
+        
+        /* Hero Background */
+        .hero-bg {
+            background: linear-gradient(135deg, 
+                #166534 0%, 
+                #14532d 25%, 
+                #0a0a0a 50%, 
+                #16a34a 75%, 
+                #14b8a6 100%
+            );
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            right: -50%;
+            bottom: -50%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 30%);
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="%23ffffff"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="%23ffffff"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%23ffffff"/></svg>') no-repeat bottom;
+            background-size: cover;
+            opacity: 0.1;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(5deg); }
+            66% { transform: translate(-20px, 20px) rotate(-5deg); }
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        /* Car Card Hover Effect */
+        .car-card {
+            position: relative;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+        }
+        
+        .dark .car-card {
+            background: linear-gradient(135deg, #141414 0%, #061a0e 100%);
+        }
+        
+        .car-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 1rem;
+            padding: 2px;
+            background: linear-gradient(135deg, #22c55e, #14b8a6, #166534);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .car-card:hover::before {
+            opacity: 1;
+        }
+        
+        .car-card:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 
+                0 20px 60px -15px rgba(34, 197, 94, 0.3),
+                0 10px 30px -10px rgba(20, 184, 166, 0.2),
+                0 0 0 1px rgba(34, 197, 94, 0.1);
+        }
+        
+        .car-card-image {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .car-card-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.3), 
+                transparent
+            );
+            transition: left 0.7s ease;
+        }
+        
+        .car-card:hover .car-card-image::before {
+            left: 100%;
+        }
+        
+        /* Button Styles */
+        .btn-primary {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+        
+        .btn-primary:hover::before {
+            width: 400px;
+            height: 400px;
+        }
+        
+        .btn-gradient {
+            background: linear-gradient(135deg, #22c55e 0%, #14b8a6 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 3s ease infinite;
+        }
+        
+        .btn-gradient:hover {
+            background-size: 100% 100%;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px -10px rgba(34, 197, 94, 0.6);
+        }
+        
+        /* Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Language Switcher */
+        .lang-btn.active {
+            background: linear-gradient(135deg, #16a34a 0%, #14b8a6 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+        }
+        
+        /* Dark Mode Toggle */
+        .toggle-bg:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            background: white;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        input:checked + .toggle-bg:after {
+            transform: translateX(100%);
+            background: #0a0a0a;
+        }
+        
+        input:checked + .toggle-bg {
+            background: linear-gradient(135deg, #22c55e 0%, #14b8a6 100%);
+            box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-dark-bg text-gray-900 dark:text-white transition-colors duration-300">
+    
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+    
+    <nav id="navbar" class="fixed top-0 left-0 right-0 bg-white/95 dark:bg-dark-card/95 backdrop-blur-md shadow-lg z-50 transition-all duration-300 border-b-2 border-transparent">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center gap-3 group">
+                    <span class="text-4xl animate-bounce-slow">🚗</span>
+                    <div>
+                        <h1 class="font-display text-2xl md:text-3xl bg-gradient-to-r from-primary-600 via-vibrant-600 to-primary-900 bg-clip-text text-transparent tracking-wider group-hover:scale-105 transition-transform">
+                            SIDI ISHAQ CAR
+                        </h1>
+                        <p class="text-xs text-gray-600 dark:text-gray-400 -mt-1" data-i18n="tagline">Premium Car Rental</p>
+                    </div>
+                </a>
+                
+                <div class="flex items-center gap-3">
+                    <div class="flex gap-1 bg-gray-100 dark:bg-dark-bg rounded-lg p-1 shadow-inner">
+                        <button class="lang-btn px-3 py-1.5 rounded text-sm font-medium transition-all hover:scale-105" data-lang="en">EN</button>
+                        <button class="lang-btn px-3 py-1.5 rounded text-sm font-medium transition-all hover:scale-105" data-lang="fr">FR</button>
+                        <button class="lang-btn px-3 py-1.5 rounded text-sm font-medium transition-all hover:scale-105" data-lang="ar">AR</button>
+                    </div>
+                    
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" id="darkModeToggle" class="sr-only peer">
+                        <div class="toggle-bg w-11 h-6 bg-gray-300 rounded-full relative transition-all peer-checked:bg-gradient-to-r peer-checked:from-primary-500 peer-checked:to-vibrant-500"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero-bg pt-32 pb-20 md:pt-40 md:pb-32 relative">
+        <div class="absolute top-10 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl animate-blob"></div>
+        <div class="absolute top-20 right-10 w-72 h-72 bg-white/5 rounded-full blur-3xl animate-blob" style="animation-delay: 2s;"></div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="inline-block mb-6 px-6 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm font-semibold animate-scale-in border border-white/20">
+                ✨ Premium Dacia Fleet Available
+            </div>
+            
+            <h2 class="hero-title font-display text-5xl md:text-7xl lg:text-8xl text-white mb-6 animate-fade-in tracking-wider drop-shadow-2xl" data-i18n="heroTitle">
+                DRIVE YOUR DREAMS
+            </h2>
+            <p class="text-xl md:text-2xl lg:text-3xl text-white/90 mb-4 animate-slide-up font-light" style="animation-delay: 0.2s" data-i18n="heroSubtitle">
+                Premium Dacia Car Rental Services
+            </p>
+            <p class="text-lg md:text-xl text-white/80 mb-10 max-w-3xl mx-auto animate-slide-up" style="animation-delay: 0.4s" data-i18n="heroDescription">
+                Experience quality and comfort with our fleet of modern Dacia vehicles
+            </p>
+            
+            <div class="flex flex-wrap gap-4 justify-center items-center animate-slide-up" style="animation-delay: 0.6s">
+                <a href="#fleet" class="btn-primary btn-gradient text-white px-10 py-5 rounded-full font-bold text-lg shadow-2xl transform hover:scale-105 transition-all" data-i18n="browseCars">
+                    Browse Our Fleet
+                </a>
+                <a href="https://wa.me/212662711830" class="btn-primary bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-full font-bold text-lg border-2 border-white/30 hover:bg-white hover:text-green-700 transition-all">
+                    Contact Us
+                </a>
+            </div>
+
+            <div class="grid grid-cols-3 gap-8 max-w-3xl mx-auto mt-16 animate-fade-in" style="animation-delay: 0.8s">
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">500+</div>
+                    <div class="text-white/80 text-sm md:text-base">Happy Clients</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">6+</div>
+                    <div class="text-white/80 text-sm md:text-base">Car Models</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">24/7</div>
+                    <div class="text-white/80 text-sm md:text-base">Support</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white dark:from-dark-bg to-transparent"></div>
+    </section>
+    
+    <section id="fleet" class="py-20 bg-gradient-to-br from-white via-green-50/20 to-teal-50/20 dark:from-dark-bg dark:via-dark-bg dark:to-dark-card relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <div class="inline-block mb-4 px-6 py-2 bg-gradient-to-r from-primary-600 to-vibrant-600 rounded-full text-white text-sm font-semibold">
+                    Our Collection
+                </div>
+                <h3 class="font-display text-4xl md:text-6xl lg:text-7xl mb-4 tracking-wide bg-gradient-to-r from-primary-700 via-vibrant-700 to-primary-900 bg-clip-text text-transparent" data-i18n="fleetTitle">
+                    OUR PREMIUM FLEET
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-lg md:text-xl max-w-3xl mx-auto" data-i18n="fleetDescription">
+                    Choose from our selection of well-maintained Dacia vehicles, perfect for any journey
+                </p>
+            </div>
+            
+            <div id="carsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="py-20 bg-gray-50 dark:bg-black relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <h3 class="font-display text-4xl md:text-6xl lg:text-7xl mb-4 tracking-wide bg-gradient-to-r from-primary-600 to-vibrant-700 bg-clip-text text-transparent" data-i18n="contactTitle">
+                    GET IN TOUCH
+                </h3>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <div class="space-y-8 reveal">
+                    <div class="group flex items-start gap-4 bg-white dark:bg-dark-card p-6 rounded-2xl shadow-lg border border-transparent hover:border-primary-500 transition-all">
+                        <div class="text-4xl">📞</div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-2" data-i18n="phoneLabel">Phone</h4>
+                            <a href="tel:+212662711830" class="text-primary-600 dark:text-primary-400 text-lg hover:underline">+212662711830</a>
+                        </div>
+                    </div>
+                    
+                    <div class="group flex items-start gap-4 bg-white dark:bg-dark-card p-6 rounded-2xl shadow-lg border border-transparent hover:border-primary-500 transition-all">
+                        <div class="text-4xl">📍</div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-2" data-i18n="addressLabel">Address</h4>
+                            <p class="text-gray-600 dark:text-gray-400" data-i18n="addressText">Sidi Ishaq Essaouira Maroc</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/212662711830" target="_blank" class="flex items-center justify-center gap-3 btn-gradient text-white px-8 py-6 rounded-2xl font-bold text-xl shadow-2xl animate-pulse-glow">
+                        <span data-i18n="whatsappButton">Chat on WhatsApp</span>
+                    </a>
+                </div>
+                
+                <div class="reveal">
+                    <div class="bg-white dark:bg-dark-card p-4 rounded-2xl shadow-lg h-full min-h-[400px]">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3388.3521636349897!2d-9.448536200000001!3d31.8698397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdadcf000426e015%3A0xba06ccd6bc93e8a5!2sSidi%20Ishaq%20Car%20Sarl!5e0!3m2!1sen!2sma!4v1770750768632!5m2!1sen!2sma" width="100%" height="100%" style="border:0; border-radius: 1rem; min-height: 400px;" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+                <div class="text-center md:text-left">
+                    <h5 class="font-display text-3xl md:text-4xl text-primary-500 mb-2">SIDI ISHAQ CAR</h5>
+                    <p class="text-gray-400 text-sm" data-i18n="footerTagline">Your Trusted Car Rental Partner</p>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 text-sm mb-3">Crafted with ❤️ by</p>
+                    <a href="https://www.linkedin.com/in/hamza-eljary" target="_blank" class="inline-flex items-center gap-3 px-6 py-3 bg-white/10 rounded-full hover:bg-white/20 transition-all border border-white/10">
+                        <span class="font-bold text-lg">HAMZA ELJARY</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center pt-8 border-t border-gray-800">
+                <p class="text-gray-500 text-sm">© <span id="currentYear"></span> Sidi Ishaq Car. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // TRANSLATIONS
+        const translations = {
+            en: { tagline: "Premium Car Rental", heroTitle: "DRIVE YOUR DREAMS", heroSubtitle: "Premium Dacia Car Rental Services", heroDescription: "Experience quality and comfort with our fleet of modern Dacia vehicles", browseCars: "Browse Our Fleet", fleetTitle: "OUR PREMIUM FLEET", fleetDescription: "Choose from our selection of well-maintained Dacia vehicles, perfect for any journey", contactTitle: "GET IN TOUCH", phoneLabel: "Phone", addressLabel: "Address", addressText: "Sidi Ishaq Essaouira Maroc", hoursLabel: "Working Hours", hoursText: "Daily: 8:00 AM - 8:00 PM", whatsappButton: "Chat on WhatsApp", footerTagline: "Your Trusted Car Rental Partner", bookNow: "Book Now", perDay: "per day", transmission: "Transmission", fuelType: "Fuel Type", airConditioning: "Air Conditioning", manual: "Manual", automatic: "Automatic", diesel: "Diesel", petrol: "Petrol", yes: "Yes", no: "No", whatsappMessage: "Hello Sidi Ishaq Car! I'm interested in renting the" },
+            fr: { tagline: "Location de Voiture Premium", heroTitle: "RÉALISEZ VOS RÊVES", heroSubtitle: "Services de Location Dacia Premium", heroDescription: "Découvrez la qualité et le confort avec notre flotte de véhicules Dacia modernes", browseCars: "Voir Notre Flotte", fleetTitle: "NOTRE FLOTTE PREMIUM", fleetDescription: "Choisissez parmi notre sélection de véhicules Dacia bien entretenus, parfaits pour tous vos trajets", contactTitle: "CONTACTEZ-NOUS", phoneLabel: "Téléphone", addressLabel: "Adresse", addressText: "Sidi Ishaq Essaouira Maroc", hoursLabel: "Horaires", hoursText: "Tous les jours: 8h00 - 20h00", whatsappButton: "Discuter sur WhatsApp", footerTagline: "Votre Partenaire de Location de Confiance", bookNow: "Réserver", perDay: "par jour", transmission: "Transmission", fuelType: "Carburant", airConditioning: "Climatisation", manual: "Manuelle", automatic: "Automatique", diesel: "Diesel", petrol: "Essence", yes: "Oui", no: "Non", whatsappMessage: "Bonjour Sidi Ishaq Car! Je suis intéressé par la location de" },
+            ar: { tagline: "تأجير سيارات فاخر", heroTitle: "حقق أحلامك", heroSubtitle: "خدمات تأجير سيارات داسيا المميزة", heroDescription: "اختبر الجودة والراحة مع أسطولنا من سيارات داسيا الحديثة", browseCars: "تصفح أسطولنا", fleetTitle: "أسطولنا المميز", fleetDescription: "اختر من مجموعتنا من سيارات داسيا المُصانة جيداً، مثالية لأي رحلة", contactTitle: "تواصل معنا", phoneLabel: "الهاتف", addressLabel: "العنوان", addressText: "سوق عام، المغرب", hoursLabel: "ساعات العمل", hoursText: "يومياً: 8:00 صباحاً - 8:00 مساءً", whatsappButton: "دردشة عبر واتساب", footerTagline: "شريكك الموثوق لتأجير السيارات", bookNow: "احجز الآن", perDay: "في اليوم", transmission: "ناقل الحركة", fuelType: "نوع الوقود", airConditioning: "تكييف الهواء", manual: "يدوي", automatic: "أوتوماتيك", diesel: "ديزل", petrol: "بنزين", yes: "نعم", no: "لا", whatsappMessage: "مرحباً سوق عام! أنا مهتم بإستئجار" }
+        };
+        
+        const cars = [
+            { name: { en: "Dacia Expres", fr: "Dacia Expres", ar: "داسيا لوجان" }, image: "images/Daciaexpres.jpg", price: 300, transmission: "manual", fuel: "diesel", ac: true },
+            { name: { en: "Dacia logan", fr: "Dacia logan", ar: "داسيا ساندرو" }, image: "images/Dacialogan.jpg", price: 280, transmission: "manual", fuel: "petrol", ac: true },
+            { name: { en: "Dacia sandiro", fr: "Dacia sandiro", ar: "داسيا دستر" }, image: "images/Daciasandiro.jpg", price: 350, transmission: "automatic", fuel: "diesel", ac: true },
+            { name: { en: "Clio 5", fr: "Clio 5", ar: "داسيا لودجي" }, image: "images/Clio5.jpg", price: 380, transmission: "manual", fuel: "diesel", ac: true },
+            // { name: { en: "Dacia Stepway", fr: "Dacia Stepway", ar: "داسيا ستيبواي" }, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2021_Dacia_Sandero_Stepway_Comfort_1.0_Front.jpg/1200px-2021_Dacia_Sandero_Stepway_Comfort_1.0_Front.jpg", price: 300, transmission: "manual", fuel: "petrol", ac: true },
+            // { name: { en: "Dacia Jogger", fr: "Dacia Jogger", ar: "داسيا جوجر" }, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/2022_Dacia_Jogger_Extreme_1.0_Front.jpg/1200px-2022_Dacia_Jogger_Extreme_1.0_Front.jpg", price: 400, transmission: "automatic", fuel: "petrol", ac: true }
+        ];
+
+        let currentLang = 'en';
+        let darkMode = false;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => document.getElementById('loader').classList.add('hidden'), 1000);
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            initializeLanguage();
+            initializeDarkMode();
+            renderCars();
+            setupEventListeners();
+            setupScrollAnimations();
+            setupNavbarScroll();
+        });
+
+        function initializeLanguage() {
+            const savedLang = localStorage.getItem('language') || 'en';
+            setLanguage(savedLang);
+        }
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('language', lang);
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) el.textContent = translations[lang][key];
+            });
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+            });
+            renderCars();
+        }
+
+        function initializeDarkMode() {
+            darkMode = localStorage.getItem('darkMode') === 'true';
+            updateDarkMode();
+        }
+
+        function updateDarkMode() {
+            document.documentElement.classList.toggle('dark', darkMode);
+            document.getElementById('darkModeToggle').checked = darkMode;
+        }
+
+        function renderCars() {
+            const grid = document.getElementById('carsGrid');
+            grid.innerHTML = '';
+            cars.forEach((car, index) => {
+                const div = document.createElement('div');
+                div.className = 'car-card rounded-2xl overflow-hidden shadow-lg reveal';
+                const carName = car.name[currentLang];
+                div.innerHTML = `
+                    <div class="car-card-image"><img src="${car.image}" class="w-full h-64 object-cover"></div>
+                    <div class="p-6">
+                        <h4 class="font-display text-2xl mb-4">${carName}</h4>
+                        <div class="text-3xl font-bold text-green-600 mb-6">${car.price} DH <span class="text-sm text-gray-400">/${translations[currentLang].perDay}</span></div>
+                        <a href="https://wa.me/212662711830" class="block w-full btn-primary btn-gradient text-white text-center py-4 rounded-xl font-bold">${translations[currentLang].bookNow}</a>
+                    </div>`;
+                grid.appendChild(div);
+            });
+        }
+
+        function setupEventListeners() {
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang'))));
+            document.getElementById('darkModeToggle').addEventListener('change', () => { darkMode = !darkMode; localStorage.setItem('darkMode', darkMode); updateDarkMode(); });
+        }
+
+        function setupScrollAnimations() {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        }
+
+        function setupNavbarScroll() {
+            let lastScroll = 0;
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+                document.getElementById('navbar').classList.toggle('navbar-hidden', currentScroll > lastScroll && currentScroll > 100);
+                lastScroll = currentScroll;
+            });
+        }
+    </script>
+</body>
+</html>
